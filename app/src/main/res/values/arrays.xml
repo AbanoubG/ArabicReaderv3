@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nameArray">
+        <item>Octopus</item>
+        <item>Pig</item>
+        <item>Sheep </item>
+        <item>Rabbit</item>
+        <item>Snake</item>
+        <item>Spider</item>
+        <item>Lion</item>
+
+    </string-array>
+
+    <string-array name="infoArray">
+        <item>8 tentacled monster</item>
+        <item>Delicious in rolls</item>
+        <item>Great for jumpers</item>
+        <item>Nice in a stew</item>
+        <item>Great for shoes</item>
+        <item>Scary.</item>
+        <item>Roar!</item>
+
+    </string-array>
+</resources>

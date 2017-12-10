@@ -18,31 +18,19 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    String[] nameArray = {"Octopus","Pig","Sheep","Rabbit","Snake","Spider" };
 
-
-    String[] infoArray = {
-            "8 tentacled monster",
-            "Delicious in rolls",
-            "Great for jumpers",
-            "Nice in a stew",
-            "Great for shoes",
-            "Scary."
-    };
-    ListView listView= (ListView) findViewById(R.id.listviewID);
+    //ListView listView= (ListView) findViewById(R.id.listviewID);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        CustomListAdapter whatever = new CustomListAdapter(this, nameArray, infoArray);
-        listView = findViewById(R.id.listviewID);
-        listView.setAdapter(whatever);
 
-/*        FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-        tx.replace(R.id.screen_area, new StandardHymnsFragment()); // Starts Info Fragment at launch*//*
-        tx.commit();*/
+
+        FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+        tx.replace(R.id.screen_area, new StandardHymnsFragment()); // Starts Info Fragment at launch
+        tx.commit();
 
 
 

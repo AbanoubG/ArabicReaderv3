@@ -5,9 +5,9 @@
     tools:context="org.copticchurchlibrary.ar.StandardResponsesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/standard_responses" />
+        android:id="@+id/listviewstandardresponses"/>
 
 </FrameLayout>

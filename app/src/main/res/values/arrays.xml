@@ -32,6 +32,23 @@
 
     </string-array>
 
+    <string-array name="HomeArray">
+        <item>Standard Hymns + Responses</item>
+        <item>Standard Deacon Responses</item>
+        <item>Great Fast Hymns + Responses</item>
+        <item>Holy Resurrection Hymns + Responses</item>
+
+    </string-array>
+
+    <string-array name="BlankArray">
+        <item>Days in which no feast/fast is observed</item>
+        <item>Standard Deacon Responses </item>
+        <item>Great Fast Hymns + Responses</item>
+        <item>From the Feast of the Resurrection to Pentecost</item>
+
+
+    </string-array>
+
 
 
 </resources>

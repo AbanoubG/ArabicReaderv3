@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity
 
 
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-        tx.replace(R.id.screen_area, new StandardHymnsFragment()); // Starts Info Fragment at launch
+        tx.replace(R.id.screen_area, new MainFragment()); // Starts StandardHymnsFragment Fragment at launch
         tx.commit();
 
 
@@ -95,10 +95,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.standard_responses) {
             fragment = new StandardResponsesFragment();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.great_fast) {
 
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.resurrection) {
 
         } else if (id == R.id.nav_share) {
 

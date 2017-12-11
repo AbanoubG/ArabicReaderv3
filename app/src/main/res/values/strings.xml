@@ -8,8 +8,11 @@
     <string name="email">arabicreader.copticchurchlibrary.org</string>
     <string name="season">Season</string>
     <string name="united">Euercumvwnin qwn oua~gap/ m~m/i n~euaggelik/</string>
-    <string name="standard_hymns">Standard Hymns</string>
-    <string name="standard_responses">Std. Deacon Responses</string>
+    <string name="greatfast">Great Fast Hymns + Responses</string>
+    <string name="resurrection">Holy Resurrection Hymns + Responses</string>
+    <string name="standard_hymns">Standard Hymns + Responses</string>
+
+    <string name="standard_responses">Standard Deacon Responses</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

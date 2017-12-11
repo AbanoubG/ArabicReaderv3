@@ -4,10 +4,15 @@ package org.copticchurchlibrary.arabicreader;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.MenuItemCompat;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 
 /**
@@ -23,6 +28,7 @@ public class MainFragment extends Fragment {
     }
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,13 +38,20 @@ public class MainFragment extends Fragment {
         return view;
     }
 
+
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        
         String[] HomeArray = getActivity().getResources().getStringArray(R.array.HomeArray);
         String[] infoArray = getActivity().getResources().getStringArray(R.array.HomeDescArray);
         CustomListAdapter whatever = new CustomListAdapter(getActivity(), HomeArray, infoArray);
         listView.setAdapter(whatever);
+
+
+
+
     }
 
     @Override
@@ -46,5 +59,5 @@ public class MainFragment extends Fragment {
         super.onResume();
         ((MainActivity) getActivity()).setActionBarTitle("Arabic Reader" ); //creates app bar title
     }
-
 }
+

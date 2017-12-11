@@ -10,9 +10,6 @@
     tools:context="org.copticchurchlibrary.arabicreader.MainActivity"
     tools:showIn="@layout/app_bar_main"
     android:id="@+id/screen_area">
-    <FrameLayout
-        android:id="@+id/screen_area1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+
 
 </RelativeLayout>

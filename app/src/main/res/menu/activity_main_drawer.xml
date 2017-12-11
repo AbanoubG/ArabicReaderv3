@@ -21,6 +21,8 @@
             <item
                 android:id="@+id/great_fast"
                 android:title="@string/greatfast" />
+
+
             <item
                 android:id="@+id/resurrection"
                 android:title="@string/resurrection"/>

@@ -1,4 +1,4 @@
-package org.copticchurchlibrary.ar;
+package org.copticchurchlibrary.arabicreader;
 
 
 import android.os.Bundle;
@@ -13,12 +13,12 @@ import android.widget.ListView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MainFragment extends Fragment {
+public class ResurrectionFragment extends Fragment {
 
     ListView listView;
 
 
-    public MainFragment() {
+    public ResurrectionFragment() {
         // Required empty public constructor
     }
 
@@ -27,24 +27,24 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_main, container, false);
-        listView = view.findViewById(R.id.listviewsmain);
+        View view=inflater.inflate(R.layout.fragment_resurrection, container, false);
+        listView = view.findViewById(R.id.listviewsresurrection);
         return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        String[] HomeArray = getActivity().getResources().getStringArray(R.array.HomeArray);
-        String[] infoArray = getActivity().getResources().getStringArray(R.array.BlankArray);
-        CustomListAdapter whatever = new CustomListAdapter(getActivity(), HomeArray, infoArray);
+        String[] ResurrectionArray = getActivity().getResources().getStringArray(R.array.ResurrectionArray);
+        String[] infoArray = getActivity().getResources().getStringArray(R.array.infoArray);
+        CustomListAdapter whatever = new CustomListAdapter(getActivity(), ResurrectionArray, infoArray);
         listView.setAdapter(whatever);
     }
 
     @Override
     public void onResume(){
         super.onResume();
-        ((MainActivity) getActivity()).setActionBarTitle("Arabic Reader" ); //creates app bar title
+        ((MainActivity) getActivity()).setActionBarTitle("Holy Resurrection" ); //creates app bar title
     }
 
 }

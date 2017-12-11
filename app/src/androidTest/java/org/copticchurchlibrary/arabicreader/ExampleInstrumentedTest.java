@@ -1,4 +1,4 @@
-package org.copticchurchlibrary.ar;
+package org.copticchurchlibrary.arabicreader;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

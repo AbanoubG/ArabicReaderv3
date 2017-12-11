@@ -1,4 +1,4 @@
-package org.copticchurchlibrary.ar;
+package org.copticchurchlibrary.arabicreader;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,13 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
-    //ListView listView= (ListView) findViewById(R.id.listviewID);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +27,7 @@ public class MainActivity extends AppCompatActivity
 
 
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-        tx.replace(R.id.screen_area, new MainFragment()); // Starts StandardHymnsFragment Fragment at launch
+        tx.replace(R.id.screen_area, new MainFragment()); // Starts MainFragment at launch
         tx.commit();
 
 
@@ -90,15 +88,19 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        if (id == R.id.home)
+            fragment = new MainFragment();
+
         if (id == R.id.standard_hymns) {
             fragment = new StandardHymnsFragment();
         } else if (id == R.id.standard_responses) {
             fragment = new StandardResponsesFragment();
 
         } else if (id == R.id.great_fast) {
-
+            fragment = new GreatFastFragment();
 
         } else if (id == R.id.resurrection) {
+            fragment = new ResurrectionFragment();
 
         } else if (id == R.id.nav_share) {
 
@@ -124,7 +126,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-    public void setActionBarTitle(String title) {
+    public void setActionBarTitle(String title) { //sets the title of the fragment in the action bar
         getSupportActionBar().setTitle(title);
 
     }

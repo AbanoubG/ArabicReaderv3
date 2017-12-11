@@ -1,4 +1,4 @@
-package org.copticchurchlibrary.ar;
+package org.copticchurchlibrary.arabicreader;
 
 import org.junit.Test;
 

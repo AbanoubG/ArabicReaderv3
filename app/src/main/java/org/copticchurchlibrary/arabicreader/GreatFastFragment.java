@@ -1,4 +1,4 @@
-package org.copticchurchlibrary.ar;
+package org.copticchurchlibrary.arabicreader;
 
 
 import android.os.Bundle;
@@ -13,12 +13,12 @@ import android.widget.ListView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class StandardResponsesFragment extends Fragment {
+public class GreatFastFragment extends Fragment {
 
     ListView listView;
 
 
-    public StandardResponsesFragment() {
+    public GreatFastFragment() {
         // Required empty public constructor
     }
 
@@ -27,28 +27,24 @@ public class StandardResponsesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_standard_responses, container, false);
-        listView = view.findViewById(R.id.listviewstandardresponses);
+        View view=inflater.inflate(R.layout.fragment_great_fast, container, false);
+        listView = view.findViewById(R.id.listviewsgreatfast);
         return view;
     }
-
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        String[] nameArray = getActivity().getResources().getStringArray(R.array.StandardResponseArray);
+        String[] GreatFastArray = getActivity().getResources().getStringArray(R.array.GreatFastArray);
         String[] infoArray = getActivity().getResources().getStringArray(R.array.infoArray);
-        CustomListAdapter whatever = new CustomListAdapter(getActivity(), nameArray, infoArray);
+        CustomListAdapter whatever = new CustomListAdapter(getActivity(), GreatFastArray, infoArray);
         listView.setAdapter(whatever);
     }
-
-
 
     @Override
     public void onResume(){
         super.onResume();
-        ((MainActivity) getActivity()).setActionBarTitle("Std. Deacon Responses"); //creates app bar title
+        ((MainActivity) getActivity()).setActionBarTitle("Great Fast" ); //creates app bar title
     }
 
 }

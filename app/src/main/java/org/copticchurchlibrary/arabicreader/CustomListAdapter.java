@@ -1,4 +1,4 @@
-package org.copticchurchlibrary.ar;
+package org.copticchurchlibrary.arabicreader;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;

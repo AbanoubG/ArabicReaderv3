@@ -1,4 +1,4 @@
-package org.copticchurchlibrary.ar;
+package org.copticchurchlibrary.arabicreader;
 
 
 import android.os.Bundle;
@@ -15,21 +15,8 @@ import android.widget.ListView;
  */
 public class StandardHymnsFragment extends Fragment {
 
-    //String[] nameArray = {"Octopus","Pig","Sheep","Rabbit","Snake","Spider" };
-
 
     ListView listView;
-    /*
-    String[] infoArray = {
-            "8 tentacled monster",
-            "Delicious in rolls",
-            "Great for jumpers",
-            "Nice in a stew",
-            "Great for shoes",
-            "Scary."
-    };
-    */
-
 
     public StandardHymnsFragment() {
         // Required empty public constructor

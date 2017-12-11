@@ -2,12 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.copticchurchlibrary.arabicreader.StandardResponsesFragment">
+    tools:context="org.copticchurchlibrary.arabicreader.ResurrectionFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listviewstandardresponses"/>
-
+        android:id="@+id/listviewsresurrection"/>
 </FrameLayout>

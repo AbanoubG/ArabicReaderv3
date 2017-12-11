@@ -32,6 +32,21 @@
 
     </string-array>
 
+    <string-array name="GreatFastArray">
+    <item>GreatFast</item>
+    <item>Test2</item>
+    <item>Test3</item>
+    <item>Test4</item>
+    </string-array>
+
+    <string-array name="ResurrectionArray">
+        <item>Resurrection</item>
+        <item>Test2</item>
+        <item>Test3</item>
+        <item>Test4</item>
+    </string-array>
+
+
     <string-array name="HomeArray">
         <item>Standard Hymns + Responses</item>
         <item>Standard Deacon Responses</item>
@@ -40,7 +55,7 @@
 
     </string-array>
 
-    <string-array name="BlankArray">
+    <string-array name="HomeDescArray">
         <item>Days in which no feast/fast is observed</item>
         <item>Standard Deacon Responses </item>
         <item>Great Fast Hymns + Responses</item>

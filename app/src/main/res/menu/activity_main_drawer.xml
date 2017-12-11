@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home">
+
+    </item>
+
     <item android:title="@string/season">
         <menu>
         <item

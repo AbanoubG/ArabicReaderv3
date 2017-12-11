@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.copticchurchlibrary.arabicreader.DetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtDetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtLyrics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDetailText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Playbutton"
+        android:src="@drawable/ic_play"
+        android:visibility="visible" />
+
+</RelativeLayout>

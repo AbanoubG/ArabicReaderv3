@@ -1,5 +1,6 @@
 package org.copticchurchlibrary.arabicreader;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -20,7 +21,12 @@ import com.onesignal.OneSignal;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,DetailFragment.OnFragmentInteractionListener {
+
+    @Override
+    public void onFragmentInteraction(Uri uri){
+
+    }
 
 
 

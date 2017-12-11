@@ -9,7 +9,7 @@ android {
         targetSdkVersion 26
         versionCode 5
         versionName "3.0"
-        manifestPlaceholders = [manifestApplicationId: "${applicationId}", onesignal_app_id: "4826b3be-ba1c-4f97-94f7-052dd6017ce2",
+        manifestPlaceholders = [manifestApplicationId          : "${applicationId}", onesignal_app_id: "4826b3be-ba1c-4f97-94f7-052dd6017ce2",
                                 onesignal_google_project_number: "901857249160"]
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 

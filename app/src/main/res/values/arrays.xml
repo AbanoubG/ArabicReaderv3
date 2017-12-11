@@ -11,6 +11,18 @@
 
     </string-array>
 
+    <string-array name="StandardHymnsArrayLyrics">
+        <item>Efrahi ya Mariam, al-´abda wa al-omo, le-an-al-lazi fee heg-raki, al-mala-eka tosa-beha-ho.</item>
+        <item>Standard Watos</item>
+        <item>Have mercy upon us </item>
+        <item>As it was</item>
+        <item>In Christ Jesus our Lord</item>
+        <item>Before You O Lord</item>
+        <item>One is the Holy Father</item>
+
+    </string-array>
+
+
     <string-array name="infoArray">
         <item>Cantor Ibrahim Ayad</item>
         <item>Cantor Ibrahim Ayad</item>

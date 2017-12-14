@@ -53,14 +53,43 @@ public class MainFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
+                Fragment fragment=null;
+                String tag="";
+                switch (position){
+                    case 0:
+                        fragment=new StandardHymnsFragment();
+                        tag=StandardHymnsFragment.class.getName();
+                        break;
+                    case 1:
+                        fragment=new StandardResponsesFragment();
+                        tag=StandardResponsesFragment.class.getName();
+
+                        break;
+                    case 2:
+                        fragment=new GreatFastFragment();
+                        tag=GreatFastFragment.class.getName();
+
+                        break;
+                    case 3:
+                        fragment=new ResurrectionFragment();
+                        tag=ResurrectionFragment.class.getName();
+
+                        break;
+
+                }
+                if(fragment!=null) {
+                    FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.screen_area, fragment, tag).addToBackStack(tag);
+                    fragmentTransaction.commit();
+                }
+                /*FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
                 DetailFragment fragment=new DetailFragment();
                 Bundle bundle=new Bundle();
                 bundle.putInt("position",position);
                 bundle.putString("title",HomeArray[position]);
                 fragment.setArguments(bundle);
                 fragmentTransaction.replace(R.id.screen_area, fragment,"DetailFragment").addToBackStack(DetailFragment.class.getName());
-                fragmentTransaction.commit();
+                fragmentTransaction.commit();*/
 
             }
         });

@@ -6,7 +6,7 @@
     tools:context="org.copticchurchlibrary.arabicreader.DetailFragment">
 
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:id="@+id/txtDetailText"
         android:layout_width="wrap_content"

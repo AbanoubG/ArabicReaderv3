@@ -82,7 +82,7 @@ public class DetailFragment extends Fragment {
             public void onClick(View v) {
                 switch (mParamPosition){
                     case 0:
-                        play(getActivity(),R.raw.howlovely);
+                        play(getActivity(),R.raw.rejoice);
                         break;
                     case 1:
                         break;

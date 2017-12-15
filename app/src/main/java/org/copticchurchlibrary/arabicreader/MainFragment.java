@@ -4,6 +4,7 @@ package org.copticchurchlibrary.arabicreader;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.MenuItemCompat;
 import android.view.LayoutInflater;
@@ -77,10 +78,20 @@ public class MainFragment extends Fragment {
                         break;
 
                 }
-                if(fragment!=null) {
+
+                if(fragment !=null){
+                    FragmentManager fragmentManager = getFragmentManager();
+                    FragmentTransaction ft = fragmentManager.beginTransaction()
+                            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                    ft.replace(R.id.screen_area, fragment, tag).addToBackStack(tag);
+                    ft.addToBackStack(null);
+
+                    ft.commit();
+
+                /*if(fragment!=null) {
                     FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                     fragmentTransaction.replace(R.id.screen_area, fragment, tag).addToBackStack(tag);
-                    fragmentTransaction.commit();
+                    fragmentTransaction.commit();*/
                 }
                 /*FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
                 DetailFragment fragment=new DetailFragment();

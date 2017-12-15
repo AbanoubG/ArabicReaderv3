@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
-        applicationId "org.copticchurchlibrary.ar"
+        applicationId "org.copticchurchlibrary.arabicrea"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 5
         versionName "3.0"
-        manifestPlaceholders = [manifestApplicationId          : "${applicationId}", onesignal_app_id: "4826b3be-ba1c-4f97-94f7-052dd6017ce2",
+        manifestPlaceholders = [manifestApplicationId: "${applicationId}", onesignal_app_id: "4826b3be-ba1c-4f97-94f7-052dd6017ce2",
                                 onesignal_google_project_number: "901857249160"]
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -24,12 +24,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:design:27.0.2'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:support-v4:27.0.2'
+    implementation 'com.onesignal:OneSignal:[3.7.0, 3.99.99]'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile 'com.onesignal:OneSignal:[3.6.5, 3.99.99]'
+
 }

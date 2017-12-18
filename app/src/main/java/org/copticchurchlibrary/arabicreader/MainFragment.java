@@ -20,7 +20,10 @@ import android.widget.SearchView;
 
 /**
  * A simple {@link Fragment} subclass.
+ *
  */
+
+// TODO: 12/15/2017 Add searchview code to display searchable items. See StandardHymnsFragment for clarification
 public class MainFragment extends Fragment {
 
     ListView listView;

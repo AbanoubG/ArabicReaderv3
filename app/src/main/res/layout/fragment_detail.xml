@@ -6,7 +6,6 @@
     tools:context="org.copticchurchlibrary.arabicreader.DetailFragment">
 
 
-
     <TextView
         android:id="@+id/txtDetailText"
         android:layout_width="wrap_content"
@@ -14,20 +13,22 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="7dp"
-        android:fontFamily="sans-serif"
+        android:fontFamily="serif"
         android:text="@string/hello_blank_fragment"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/txtDetailText"
-        android:layout_marginTop="7dp"
+        android:layout_alignTop="@+id/txtDetailText"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/txtDetailText"
+        android:layout_toRightOf="@+id/txtDetailText"
         android:contentDescription="Playbutton"
+        android:cropToPadding="false"
         android:src="@drawable/ic_play"
         android:visibility="visible" />
 
@@ -49,13 +50,15 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageView"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="sans-serif"
+                android:paddingTop="15sp"
+                android:fontFamily="@font/georgia"
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="@string/hello_blank_fragment"
                 android:textAlignment="viewStart"
                 android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
+
         </ScrollView>
     </RelativeLayout>
 

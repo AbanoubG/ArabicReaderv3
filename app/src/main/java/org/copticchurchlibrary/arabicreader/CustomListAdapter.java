@@ -24,6 +24,8 @@ public class CustomListAdapter extends ArrayAdapter {
     private final String[] infoArray;
 
 
+
+
     CustomListAdapter(Activity context, String[] nameArrayParam, String[] infoArrayParam){
 
         super(context, R.layout.listview_row , nameArrayParam);

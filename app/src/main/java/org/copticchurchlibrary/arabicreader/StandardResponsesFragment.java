@@ -5,7 +5,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -18,6 +23,7 @@ import android.widget.ListView;
 public class StandardResponsesFragment extends Fragment {
 
     ListView listView;
+    CustomListAdapter whatever;
 
 
     public StandardResponsesFragment() {
@@ -41,7 +47,8 @@ public class StandardResponsesFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         final String[] StandardResponseArray = getActivity().getResources().getStringArray(R.array.StandardResponseArray);
         String[] infoArray = getActivity().getResources().getStringArray(R.array.infoArray);
-        CustomListAdapter whatever = new CustomListAdapter(getActivity(), StandardResponseArray, infoArray);
+        whatever = new CustomListAdapter(getActivity(), StandardResponseArray, infoArray);
+/*        CustomListAdapter whatever = new CustomListAdapter(getActivity(), StandardResponseArray, infoArray);*/
         listView.setAdapter(whatever);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -60,6 +67,37 @@ public class StandardResponsesFragment extends Fragment {
             }
         });
 
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setHasOptionsMenu(true);
+
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.fragment_search, menu);
+        MenuItem searchItem = menu.findItem(R.id.menu_search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                whatever.getFilter().filter(query);
+                listView.setAdapter(whatever);
+                return true;
+
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                whatever.getFilter().filter(newText);
+                return true;
+            }
+        });
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
 

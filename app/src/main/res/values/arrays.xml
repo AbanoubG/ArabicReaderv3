@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="StandardHymnsArray">
+        <item>The Lords Prayer</item>
+        <item>We look for the Resurrection</item>
         <item>Rejoice O Mary</item>
         <item>Standard Watos</item>
+        <item>The Cherubium</item>
+        <item>Amen. I believe</item>
+        <item>According to Your mercy O Lord</item>
         <item>Have mercy upon us </item>
+        <item>May their holy blessing </item>
         <item>As it was</item>
         <item>In Christ Jesus our Lord</item>
         <item>Before You O Lord</item>
         <item>One is the Holy Father</item>
+        <item>Psalm 150</item>
 
     </string-array>
 
     <string-array name="StandardHymnsArrayLyrics">
+        <item>Abanal lazee fel samawat, leyataqadas esmak, le ya’tee malakoutak, le takon masheeatak,\n\nkama fel sama’ kazalek 3alal ard, khobzana kafafana, a3tenal youm, wa eghfer lana zenobana, kama naghfer nahno aydan lel moznebeen elayna,\n\nwa la tod khellna fei tagreba, laken nageena menal shereer. Belmaseeh yasou3 rabena le-ana lakal molk wal qowah wal magd elal abad. Amen.  </item>
+        <item>Wanatazer key-ya-ma al-amwat wa hayet daher altee amen.</item>
         <item>Efrahi ya Mariam, al-abda wa al-omo, le-an-al-lazi fee heg-raki, al-mala-eka tosa-beha-ho. \n\n
 
 Wa-al-sha-robim yasgodo-na laho be-esteh-qak. Wa al-serafim be-ghair fotor.\n\n
@@ -23,12 +32,38 @@ Leekay nosab-behaka ma-a al-sherobim wa al-serafim, saree-khena ka-eleen.\n\n
 Kodos, kodos, kodos, ayoha al-rabo al-dabet el-kol. A-sama wa al-ardo mam-lo-atane men mag-deka wa kra-mateka.\n\n
 
 Nas-alak ya Ebn Allah, an tahfaz haiat bat-reiar-kena al-baba al-anba Shenoda ra-eso al-kahana, sabet-ho ala korseh.</item>
-        <item>Standard Watos</item>
-        <item>Have mercy upon us </item>
-        <item>As it was</item>
-        <item>In Christ Jesus our Lord</item>
-        <item>Before You O Lord</item>
-        <item>One is the Holy Father</item>
+        <item>{Standard Watos Placeholder text}</item>
+        <item> Al Sharobeem yasgoodona lak wa Seraphim yo magedo nak. Sare-kheen ka e-leen. Kodos, kodos, kodos, Rubo sabahoot. Al sama wal ard do malo a tan nee min men de kal ak-das.</item>
+        <item>Ha-kan noo-men</item>
+        <item> Kara</item>
+        <item>Erhamna ya Allah da bit til kol </item>
+        <item>Kama kan ha ka za ya kol min gilen e la gil wa ela da he de hor Amen.</item>
+        <item>Barakat-hom mo kadasat fel ta kol ma na Amen. El magd do lak ya Rub. Ya Rubo erham. Ya Rubo erham. Ya Rubo barekna. Ya Rubo nay-ye-hom. Amen.</item>
+        <item>{In Christ Placeholder text}</item>
+        <item>{Before YouPlaceholder text}</item>
+        <item>One is the holy father</item>
+        <item>Sabe-hoollah fee gamea-a kideeseen \n\n
+
+ ✜ Sabehoo fee galad kou-wati-hee \n\n
+
+   Sabehoo ala mag derati-hee \n\n
+
+ ✜ Sabehoo ka kasarat aza mati-hee \n\n
+
+   Sabehoo o beh sout el bouk \n\n
+
+ ✜ Sabehoo beh mizmarin wa keethar \n\n
+
+   Sabehoo beh dou-foo-fin wa sou-foon \n\n
+
+ ✜ Sabehoo beh awtarin wa orgoon \n\n
+
+   Sabehoo besnogin hasinat el-soout \n\n
+
+ ✜ Sabehoo besnogin talee \n\n
+
+   Kouloo nasma fel to sabeh esmil rub e-lah na
+</item>
 
     </string-array>
 
@@ -41,14 +76,21 @@ Nas-alak ya Ebn Allah, an tahfaz haiat bat-reiar-kena al-baba al-anba Shenoda ra
         <item>Cantor Ibrahim Ayad</item>
         <item>Cantor Ibrahim Ayad</item>
         <item>Cantor Ibrahim Ayad</item>
+        <item>Cantor Ibrahim Ayad</item>
+        <item>Cantor Ibrahim Ayad</item>
+        <item>Cantor Ibrahim Ayad</item>
+        <item>Cantor Ibrahim Ayad</item>
+        <item>Cantor Ibrahim Ayad</item>
+        <item>Cantor Ibrahim Ayad</item>
+        <item>Cantor Ibrahim Ayad</item>
 
     </string-array>
 
     <string-array name="StandardResponseArray">
         <item>Standard Response</item>
-        <item>Test2</item>
-        <item>Test3</item>
-        <item>Test4</item>
+        <item>{Placeholder text}</item>
+        <item>{Placeholder text}</item>
+        <item>{Placeholder text}</item>
 
 
 

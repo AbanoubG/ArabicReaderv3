@@ -52,7 +52,8 @@ public class ResurrectionFragment extends Fragment {
                 fragment.setArguments(bundle);
                 fragmentTransaction.replace(R.id.screen_area, fragment,"DetailFragment").addToBackStack(DetailFragment.class.getName());
                 fragmentTransaction.commit();
-                // TODO: 12/13/2017 Add Lyrics code to display hymn text. See StandardHymnsFragment for clarification 
+                // TODO: 12/13/2017 Add Lyrics code to display hymn text. See StandardHymnsFragment for clarification
+                // TODO: 12/15/2017 Add searchview code to display searchable items. See StandardHymnsFragment for clarification
 
             }
         });

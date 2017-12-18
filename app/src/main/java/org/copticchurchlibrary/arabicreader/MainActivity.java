@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.standard_responses) {
             fragment = new StandardResponsesFragment();
 
-        } else if (id == R.id.great_fast) {
+       /* } else if (id == R.id.great_fast) {
             fragment = new GreatFastFragment();
 
         } else if (id == R.id.resurrection) {
@@ -119,7 +119,8 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_send) {*/
+            // TODO: Re-add these other menu items when sufficient content is added. To add them back to the menu go to activity_main_drawer.
 
         }
 

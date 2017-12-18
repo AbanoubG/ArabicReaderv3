@@ -67,17 +67,14 @@ public class MainFragment extends Fragment {
                     case 1:
                         fragment=new StandardResponsesFragment();
                         tag=StandardResponsesFragment.class.getName();
-
                         break;
                     case 2:
                         fragment=new GreatFastFragment();
                         tag=GreatFastFragment.class.getName();
-
                         break;
                     case 3:
                         fragment=new ResurrectionFragment();
                         tag=ResurrectionFragment.class.getName();
-
                         break;
 
                 }

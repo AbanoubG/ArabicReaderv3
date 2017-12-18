@@ -30,7 +30,8 @@
         android:contentDescription="Playbutton"
         android:cropToPadding="false"
         android:src="@drawable/ic_play"
-        android:visibility="visible" />
+        android:visibility="invisible" />
+    <!--Todo: Change visibility to true once audio is ready to be implemented-->
 
     <RelativeLayout
         android:layout_width="match_parent"

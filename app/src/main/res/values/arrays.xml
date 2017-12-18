@@ -114,9 +114,9 @@ Nas-alak ya Ebn Allah, an tahfaz haiat bat-reiar-kena al-baba al-anba Shenoda ra
     <string-array name="HomeArray">
         <item>Standard Hymns + Responses</item>
         <item>Standard Deacon Responses</item>
-        <item>Great Fast Hymns + Responses</item>
-        <item>Holy Resurrection Hymns + Responses</item>
-
+<!--        <item>Great Fast Hymns + Responses</item>
+        <item>Holy Resurrection Hymns + Responses</item>-->
+<!-- Todo: Add the above items back in once content is added for them-->
     </string-array>
 
     <string-array name="HomeDescArray">

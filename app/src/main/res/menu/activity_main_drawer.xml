@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+
     <item android:title="Home"
         android:id="@+id/home"
         android:icon="@drawable/ic_home">
@@ -20,12 +21,17 @@
 
             <item
                 android:id="@+id/great_fast"
-                android:title="@string/greatfast" />
+                android:title="@string/greatfast"
+                android:visible="false"/>
+
 
 
             <item
                 android:id="@+id/resurrection"
-                android:title="@string/resurrection"/>
+                android:title="@string/resurrection"
+                android:visible="false"/>
+            <!--Todo: Add the above items back in once content is added for them. Change visibility to true or delete the line-->
+
             <item
                 android:id="@+id/nav_manage"
                 android:icon="@drawable/ic_menu_manage"
@@ -50,3 +56,5 @@
     </item>
 
 </menu>
+
+

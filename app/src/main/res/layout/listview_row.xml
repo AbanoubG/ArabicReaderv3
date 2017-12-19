@@ -20,7 +20,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
             android:text="Name"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -34,6 +34,7 @@
             android:paddingLeft="15dp"
             android:text="Info"
             android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
             android:textSize="14sp"
             android:textStyle="italic" />
 
